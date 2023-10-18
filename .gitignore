@@ -1,9 +1,8 @@
-target/
-logs/
-.idea
-.gitignore
-pom.xml
-Task2_Airline.iml
+/target/
+/.idea/
+/.gitignore
+/pom.xml
+/Task2_Airline.iml
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
