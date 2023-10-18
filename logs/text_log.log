@@ -1,3 +1,3 @@
-21:56:51.231 [main] INFO  by.melnikov.main.Main - [destination = ISTANBUL, number = QR4352, plane = EMBRAER_170, departureTime = 20:12, departureDay = FRIDAY]
-21:56:51.235 [main] INFO  by.melnikov.main.Main - [destination = MOSCOW, number = 34525B, plane = BOEING_737, departureTime = 17:56, departureDay = SATURDAY]
-21:56:51.235 [main] INFO  by.melnikov.main.Main - [destination = MADRID, number = 123AS2, plane = EMBRAER_170, departureTime = 06:38, departureDay = SUNDAY]
+23:03:23.437 [main] INFO  by.melnikov.main.Main - [destination = ISTANBUL, number = QR4352, plane = EMBRAER_170, departureTime = 20:12, departureDay = FRIDAY]
+23:03:23.441 [main] INFO  by.melnikov.main.Main - [destination = MOSCOW, number = 34525B, plane = BOEING_737, departureTime = 17:56, departureDay = SATURDAY]
+23:03:23.442 [main] INFO  by.melnikov.main.Main - [destination = MADRID, number = 123AS2, plane = EMBRAER_170, departureTime = 06:38, departureDay = SUNDAY]

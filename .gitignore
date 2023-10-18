@@ -1,7 +1,5 @@
 /target/
-/.idea/
-.gitignore
-pom.xml
+.idea
 Task2_Airline.iml
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

@@ -14,7 +14,7 @@ public class Main {
     public static Logger logger = LogManager.getLogger();
 
     public static void main(String[] args) {
-        Airline airline = AirlineFactory.createAirline(".\\airline.txt");
+        Airline airline = AirlineFactory.createAirline(".\\src\\main\\resources\\airline.txt");
         AirlineService airlineService = new AirlineServiceImpl();
 
         airlineService.showAllFlights(airline);
