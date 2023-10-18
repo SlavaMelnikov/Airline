@@ -1,9 +1,10 @@
 /target/
-.idea
 Task2_Airline.iml
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+/.idea/
+/logs/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
