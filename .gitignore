@@ -3,14 +3,13 @@
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea/
-/logs/
+/.idea
+/logs
 /target/
 /src/test/
 *.iws
 *.iml
 *.ipr
-Task2_Airline.iml
 
 ### Eclipse ###
 .apt_generated
