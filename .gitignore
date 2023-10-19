@@ -3,8 +3,9 @@
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-/.idea
-/logs
+/pom.xml
+/logs/
+/.idea/
 /target/
 /src/test/
 *.iws
