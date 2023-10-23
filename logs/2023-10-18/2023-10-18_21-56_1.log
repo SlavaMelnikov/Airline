@@ -1,7 +1,0 @@
-21:53:49.982 [main] INFO  by.melnikov.main.Main - [destination = MOSCOW, number = 34525B, plane = BOEING_737, departureTime = 17:56, departureDay = SATURDAY]
-21:53:49.987 [main] INFO  by.melnikov.main.Main - [destination = MADRID, number = 123AS2, plane = EMBRAER_170, departureTime = 06:38, departureDay = SUNDAY]
-21:56:51.209 [main] INFO  by.melnikov.main.Main - [destination = MOSCOW, number = 19AGO3, plane = AIRBUS_320, departureTime = 22:10, departureDay = MONDAY]
-21:56:51.212 [main] INFO  by.melnikov.main.Main - [destination = MINSK, number = 89U321, plane = SJ_100, departureTime = 09:42, departureDay = TUESDAY]
-21:56:51.213 [main] INFO  by.melnikov.main.Main - [destination = BERLIN, number = 52924K, plane = EMBRAER_170, departureTime = 11:38, departureDay = WEDNESDAY]
-21:56:51.214 [main] INFO  by.melnikov.main.Main - [destination = MILAN, number = 5P7291, plane = BOEING_737, departureTime = 00:00, departureDay = FRIDAY]
-21:56:51.214 [main] INFO  by.melnikov.main.Main - [destination = LONDON, number = 231C45, plane = AIRBUS_320, departureTime = 11:12, departureDay = FRIDAY]

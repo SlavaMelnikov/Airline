@@ -1,11 +1,13 @@
-MOSCOW     19AGO3    AIRBUS_320    22:10   1
-MINSK      89U321    SJ_100        09:42   2
-BERLIN     52924K    EMBRAER_170   11:38   3
-MILAN      5P7291    BOEING_737    00:00   5
-LONDON     231C45    AIRBUS_320    11:12   5
-MOSCOW     34525B    BOEING_737    17:56   6
-ROME       8M0021    BOEING_737    11:10   4
-MADRID     123AS2    EMBRAER_170   06:38   7
-MINSK      00R124    AIRBUS_321    11:46   2
-ISTANBUL   QR4352    EMBRAER_170   20:12   5
-LONDON     8E5632    SJ_100        23:40   1
+id    number      dest         plane         time     day
+
+1     19AGO3     MOSCOW      AIRBUS_320      22:10     1
+2     89U321     MINSK       SJ_100          09:42     2
+3     52924K     BERLIN      EMBRAER_170     11:38     3
+4     5P7291     MILAN       BOEING_737      00:00     5
+5     231C45     LONDON      AIRBUS_320      11:12     5
+6     34525B     MOSCOW      BOEING_737      17:56     6
+7     8M0021     ROME        BOEING_737      11:10     4
+8     123AS2     MADRID      EMBRAER_170     06:38     7
+9     00R124     MINSK       AIRBUS_321      11:46     2
+10    QR4352     ISTANBUL    EMBRAER_170     20:12     5
+11    8E5632     LONDON      SJ_100          23:40     1

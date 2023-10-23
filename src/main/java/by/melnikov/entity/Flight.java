@@ -6,26 +6,28 @@ import java.util.Objects;
 import java.util.StringJoiner;
 
 public class Flight {
-    private String destination;
+    private long flightId; //todo
     private String number;
+    private String destination;
     private String plane;
     private LocalTime departureTime;
     private DayOfWeek departureDay;
 
-    public Flight(String destination, String number, String plane, LocalTime departureTime, DayOfWeek departureDay) {
-        this.destination = destination;
+    public Flight(long flightId, String number, String destination, String plane, LocalTime departureTime, DayOfWeek departureDay) {
+        this.flightId = flightId;
         this.number = number;
+        this.destination = destination;
         this.plane = plane;
         this.departureTime = departureTime;
         this.departureDay = departureDay;
     }
 
-    public String getDestination() {
-        return destination;
+    public long getFlightId() {
+        return flightId;
     }
 
-    public void setDestination(String destination) {
-        this.destination = destination;
+    public void setFlightId(long flightId) {
+        this.flightId = flightId;
     }
 
     public String getNumber() {
@@ -34,6 +36,13 @@ public class Flight {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 
     public String getPlane() {
@@ -67,8 +76,9 @@ public class Flight {
 
         Flight flight = (Flight) o;
 
-        if (!Objects.equals(destination, flight.destination)) return false;
+        if (flightId != flight.flightId) return false;
         if (!Objects.equals(number, flight.number)) return false;
+        if (!Objects.equals(destination, flight.destination)) return false;
         if (!Objects.equals(plane, flight.plane)) return false;
         if (!Objects.equals(departureTime, flight.departureTime))
             return false;
@@ -77,8 +87,9 @@ public class Flight {
 
     @Override
     public int hashCode() {
-        int result = destination != null ? destination.hashCode() : 0;
+        int result = (int) (flightId ^ (flightId >>> 32));
         result = 31 * result + (number != null ? number.hashCode() : 0);
+        result = 31 * result + (destination != null ? destination.hashCode() : 0);
         result = 31 * result + (plane != null ? plane.hashCode() : 0);
         result = 31 * result + (departureTime != null ? departureTime.hashCode() : 0);
         result = 31 * result + (departureDay != null ? departureDay.hashCode() : 0);
@@ -88,8 +99,9 @@ public class Flight {
     @Override
     public String toString() {
         return new StringJoiner(", ",  "[", "]")
-                .add("destination = " + destination)
+                .add("flightId = " + flightId)
                 .add("number = " + number)
+                .add("destination = " + destination)
                 .add("plane = " + plane)
                 .add("departureTime = " + departureTime)
                 .add("departureDay = " + departureDay)

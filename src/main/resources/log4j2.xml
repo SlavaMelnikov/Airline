@@ -6,7 +6,7 @@
     </Properties>
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%-5level - %msg%n"/>
+            <PatternLayout pattern="%r %-5level %logger{1} - %msg%n"/>
         </Console>
         <RollingFile name="FileRolling" filename="${LOG_DIR}/text_log.log" append="true" filePattern="${LOG_DIR}/${date:yyyy-MM-dd}/%d{yyyy-MM-dd_HH-mm}_%i.log">
             <PatternLayout pattern="${pattern_file}"/>
