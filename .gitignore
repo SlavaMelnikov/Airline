@@ -3,14 +3,10 @@
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-logs/
-.idea/
+/logs/
 /target/
-/src/test/
-pom.xml
-*.iws
-*.iml
-*.ipr
+.idea/
+*.xml
 
 ### Eclipse ###
 .apt_generated
@@ -36,3 +32,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
