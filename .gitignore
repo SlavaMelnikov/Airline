@@ -5,8 +5,9 @@
 ### IntelliJ IDEA ###
 /logs/
 /target/
-.idea/
+/.idea/
 *.xml
+*.ml
 
 ### Eclipse ###
 .apt_generated
