@@ -7,7 +7,7 @@
 /target/
 /.idea/
 *.xml
-*.ml
+*.iml
 
 ### Eclipse ###
 .apt_generated
