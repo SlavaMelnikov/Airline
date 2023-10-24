@@ -7,7 +7,7 @@ logs/
 .idea/
 /target/
 /src/test/
-*.xml
+pom.xml
 *.iws
 *.iml
 *.ipr

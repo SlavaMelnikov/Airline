@@ -3,7 +3,7 @@ package by.melnikov.Airline.service.impl;
 import by.melnikov.Airline.service.AirlineService;
 import by.melnikov.Airline.entity.Airline;
 import by.melnikov.Airline.entity.Flight;
-import by.melnikov.Airline.exception.ServiceException;
+import by.melnikov.Airline.exception.CustomException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,27 +15,30 @@ import java.util.Comparator;
 
 
 public class AirlineServiceImpl implements AirlineService {
-    private static Logger logger = LogManager.getLogger();
-    private static AirlineServiceImpl instance = new AirlineServiceImpl();
+    private static final Logger logger = LogManager.getLogger();
+    private static final AirlineServiceImpl instance = new AirlineServiceImpl();
 
     public static AirlineServiceImpl getInstance() { //todo
         return instance;
     }
+
     @Override
-    public List<Flight> findAllFlights(Airline airline) throws ServiceException {
+    public List<Flight> findAllFlights(Airline airline) throws CustomException {
         if (airline == null) {
-            logger.error("airline is null"); //fixme right or no?
-            throw new ServiceException("airline is null");
+            logger.error("airline is null");
+            throw new CustomException("airline is null");
         }
         return airline.getFlights();
     }
 
     @Override
-    public List<Flight> findFlightsTo(Airline airline, String destination) throws ServiceException {
+    public List<Flight> findFlightsTo(Airline airline, String destination) throws CustomException {
         if (airline == null) {
-            throw new ServiceException("airline is null");
+            logger.error("airline is null");
+            throw new CustomException("airline is null");
         } else if (destination == null) {
-            throw new ServiceException("destination is null");
+            logger.error("airline is null");
+            throw new CustomException("destination is null");
         }
         List<Flight> relevantFlights = new ArrayList<>();
         for (Flight flight : airline.getFlights()) {
@@ -47,9 +50,10 @@ public class AirlineServiceImpl implements AirlineService {
     }
 
     @Override
-    public List<Flight> findFlightsOn(Airline airline, DayOfWeek dayOfWeek) throws ServiceException {
+    public List<Flight> findFlightsOn(Airline airline, DayOfWeek dayOfWeek) throws CustomException {
         if (airline == null) {
-            throw new ServiceException("airline is null");
+            logger.error("airline is null");
+            throw new CustomException("airline is null");
         }
         List<Flight> relevantFlights = new ArrayList<>();
         for (Flight flight : airline.getFlights()) {
@@ -61,9 +65,10 @@ public class AirlineServiceImpl implements AirlineService {
     }
 
     @Override
-    public List<Flight> findFlightsOnAndAfter(Airline airline, DayOfWeek day, LocalTime time) throws ServiceException {
+    public List<Flight> findFlightsOnAndAfter(Airline airline, DayOfWeek day, LocalTime time) throws CustomException {
         if (airline == null) {
-            throw new ServiceException("airline is null");
+            logger.error("airline is null");
+            throw new CustomException("airline is null");
         }
         List<Flight> relevantFlights = new ArrayList<>();
         for (Flight flight : airline.getFlights()) {
@@ -75,9 +80,10 @@ public class AirlineServiceImpl implements AirlineService {
     }
 
     @Override
-    public List<Flight> findAllFlightsAfter(Airline airline, DayOfWeek actualDay, LocalTime actualTime) throws ServiceException {
+    public List<Flight> findAllFlightsAfter(Airline airline, DayOfWeek actualDay, LocalTime actualTime) throws CustomException {
         if (airline == null) {
-            throw new ServiceException("airline is null");
+            logger.error("airline is null");
+            throw new CustomException("airline is null");
         }
         List<Flight> relevantFlights = new ArrayList<>();
         for (Flight flight : airline.getFlights()) {
@@ -86,8 +92,8 @@ public class AirlineServiceImpl implements AirlineService {
                 relevantFlights.add(flight);
             }
         }
-        Comparator<Flight> flightsDayAndTimeComparator = Comparator.comparing(Flight::getDepartureDay).thenComparing(Flight::getDepartureTime); //todo
-        relevantFlights.sort(flightsDayAndTimeComparator); // or Collections.sort(list, comparator)?
+        Comparator<Flight> flightsDayAndTimeComparator = Comparator.comparing(Flight::getDepartureDay).thenComparing(Flight::getDepartureTime);
+        relevantFlights.sort(flightsDayAndTimeComparator);
         return relevantFlights;
     }
 }

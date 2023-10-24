@@ -1,11 +1,10 @@
 package by.melnikov.Airline.reader;
 
-import by.melnikov.Airline.exception.FileReaderException;
+import by.melnikov.Airline.exception.CustomException;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 
 public class DataReader {
@@ -18,24 +17,15 @@ public class DataReader {
         return instance;
     }
 
-    public List<String> fileDataReader(String pathToFile) throws FileReaderException { //todo
+    public List<String> fileDataReader(String pathToFile) throws CustomException {
         Path path = Path.of(pathToFile);
         if (!Files.exists(path)) {
-            throw new FileReaderException("File not found");
-        } else {
-            try {
-                return Files.readAllLines(path);
-            } catch (IOException e) {
-                throw new FileReaderException("The data is not correct", e);
-            }
+            throw new CustomException("File not found in " + pathToFile);
         }
-    }
-
-    public List<String[]> parseData(List<String> lines) {
-        List<String[]> data = new ArrayList<>();
-        for (String line : lines) {
-            data.add(line.split("\\s+"));
+        try {
+            return Files.readAllLines(path);
+        } catch (IOException e) {
+            throw new CustomException("The data is not correct", e);
         }
-        return data;
     }
 }
