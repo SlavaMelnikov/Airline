@@ -1,6 +1,6 @@
-package by.melnikov.reader;
+package by.melnikov.Airline.reader;
 
-import by.melnikov.exception.FileReaderException;
+import by.melnikov.Airline.exception.FileReaderException;
 
 import java.io.IOException;
 import java.nio.file.Files;

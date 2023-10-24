@@ -3,11 +3,11 @@
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-/pom.xml
-/logs/
-/.idea/
+logs/
+.idea/
 /target/
 /src/test/
+*.xml
 *.iws
 *.iml
 *.ipr

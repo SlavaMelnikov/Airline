@@ -1,6 +1,6 @@
-package by.melnikov.printer;
+package by.melnikov.Airline.printer;
 
-import by.melnikov.entity.Flight;
+import by.melnikov.Airline.entity.Flight;
 
 import java.util.List;
 

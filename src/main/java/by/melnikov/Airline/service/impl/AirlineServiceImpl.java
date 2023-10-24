@@ -1,9 +1,9 @@
-package by.melnikov.service.impl;
+package by.melnikov.Airline.service.impl;
 
-import by.melnikov.entity.Airline;
-import by.melnikov.entity.Flight;
-import by.melnikov.exception.ServiceException;
-import by.melnikov.service.AirlineService;
+import by.melnikov.Airline.service.AirlineService;
+import by.melnikov.Airline.entity.Airline;
+import by.melnikov.Airline.entity.Flight;
+import by.melnikov.Airline.exception.ServiceException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

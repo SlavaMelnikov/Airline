@@ -1,9 +1,9 @@
-package by.melnikov.creator;
+package by.melnikov.Airline.creator;
 
-import by.melnikov.entity.Airline;
-import by.melnikov.entity.Flight;
-import by.melnikov.exception.FileReaderException;
-import by.melnikov.reader.DataReader;
+import by.melnikov.Airline.entity.Airline;
+import by.melnikov.Airline.entity.Flight;
+import by.melnikov.Airline.exception.FileReaderException;
+import by.melnikov.Airline.reader.DataReader;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;

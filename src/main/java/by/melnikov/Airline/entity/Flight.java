@@ -1,4 +1,4 @@
-package by.melnikov.entity;
+package by.melnikov.Airline.entity;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;

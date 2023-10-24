@@ -1,4 +1,4 @@
-package by.melnikov.exception;
+package by.melnikov.Airline.exception;
 
 public class ServiceException extends Exception {
     public ServiceException() {

@@ -1,8 +1,8 @@
-package by.melnikov.service;
+package by.melnikov.Airline.service;
 
-import by.melnikov.entity.Airline;
-import by.melnikov.entity.Flight;
-import by.melnikov.exception.ServiceException;
+import by.melnikov.Airline.entity.Airline;
+import by.melnikov.Airline.entity.Flight;
+import by.melnikov.Airline.exception.ServiceException;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;

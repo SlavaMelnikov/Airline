@@ -1,17 +1,15 @@
-package by.melnikov.main;
+package by.melnikov.Airline.main;
 
-import by.melnikov.creator.AirlineFactory;
-import by.melnikov.entity.Airline;
-import by.melnikov.entity.Flight;
-import by.melnikov.exception.FileReaderException;
-import by.melnikov.exception.ServiceException;
-import by.melnikov.printer.DataPrinter;
-import by.melnikov.service.AirlineService;
-import by.melnikov.service.impl.AirlineServiceImpl;
+import by.melnikov.Airline.service.AirlineService;
+import by.melnikov.Airline.creator.AirlineFactory;
+import by.melnikov.Airline.entity.Airline;
+import by.melnikov.Airline.exception.FileReaderException;
+import by.melnikov.Airline.exception.ServiceException;
+import by.melnikov.Airline.printer.DataPrinter;
+import by.melnikov.Airline.service.impl.AirlineServiceImpl;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws FileReaderException, ServiceException {
